@@ -232,28 +232,36 @@ main {
 
 .pub-list, .record-list {
   list-style: none;
-  margin: 1rem 0 0;
+  margin: 1.25rem 0 0;
   padding: 0;
 }
-.pub-list li {
-  display: grid;
-  grid-template-columns: 3.2em 1fr;
-  gap: 0.2rem 1rem;
-  padding: 0.85rem 0;
+.pub-item {
+  padding: 1.25rem 0;
   border-top: 1px solid var(--border);
 }
-.pub-list li:first-child { border-top: none; }
-.pub-year {
+.pub-item:first-child { padding-top: 0; border-top: none; }
+.pub-title {
+  font-size: 1.02rem;
+  margin: 0 0 0.75rem;
+}
+.pub-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1rem;
+  margin: 0;
+}
+.pub-meta div { display: contents; }
+.pub-meta dt {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.68rem;
   color: var(--text-muted);
-  font-size: 0.8rem;
   padding-top: 0.15rem;
 }
-.pub-body { font-size: 0.96rem; }
-.pub-venue {
-  grid-column: 2;
-  color: var(--text-muted);
-  font-size: 0.85rem;
+.pub-meta dd {
+  margin: 0;
+  font-size: 0.92rem;
 }
 .pub-footer {
   margin-top: 1.25rem;
@@ -325,6 +333,6 @@ footer {
 @media (max-width: 640px) {
   .navlinks { display: none; }
   .skills-grid, .contact-grid { grid-template-columns: 1fr; }
-  .pub-list li { grid-template-columns: 1fr; }
-  .pub-venue { grid-column: 1; }
+  .pub-meta { grid-template-columns: 1fr; }
+  .pub-meta dt { padding-top: 0.5rem; }
 }
