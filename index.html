@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Takis Angelides</title>
-<meta name="description" content="Takis Angelides — Postdoctoral researcher at the Alfred Wegener Institute working on Julia-based subglacial hydrology and ice-sheet modeling.">
+<meta name="description" content="Takis Angelides — Postdoctoral researcher at the Alfred Wegener Institute working on Julia-based glacial hydrology and ice-sheet modeling.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
   </button>
   <h1>Takis Angelides</h1>
   <p class="role">Postdoctoral Researcher, <a href="https://www.awi.de/en/science/geosciences/polar-terrestrial-environmental-systems/research-foci/earth-system-complexity.html" target="_blank" rel="noopener">Earth System Complexity</a><br><a href="https://www.awi.de/en/" target="_blank" rel="noopener">Alfred Wegener Institute (AWI)</a>, Potsdam</p>
-  <p class="tags">subglacial hydrology &middot; ice-sheet modeling &middot; Julia scientific computing</p>
+  <p class="tags">glacial hydrology &middot; ice-sheet modeling &middot; Julia scientific computing</p>
 </header>
 
 <dialog id="photo-dialog" aria-label="Enlarged photo of Takis Angelides">
@@ -47,24 +47,24 @@
   <section id="about" class="block">
     <p class="eyebrow">About</p>
     <h2>My research</h2>
-    <p>I'm a postdoctoral researcher at the <a href="https://www.awi.de/" target="_blank" rel="noopener">Alfred Wegener Institute</a>, building Julia-based subglacial hydrology models to couple them to ice-sheet flow models. Subglacial water pressure controls basal sliding, which in turn controls how fast ice reaches the ocean &mdash; making hydrology central to projecting sea-level rise from ice sheets like Antarctica and Greenland.</p>
+    <p>I'm a postdoctoral researcher at the <a href="https://www.awi.de/" target="_blank" rel="noopener">Alfred Wegener Institute</a>, building Julia-based glacial hydrology models to couple them to ice-sheet flow models. Subglacial water pressure controls basal sliding, which in turn controls how fast ice reaches the ocean &mdash; making hydrology central to projecting sea-level rise from ice sheets like Antarctica and Greenland.</p>
     <p>If you're interested in collaborating, have questions about my code, or are looking at glacial hydrology / ice-sheet coupling yourself, <a href="#contact">please get in touch</a>.</p>
   </section>
 
   <section id="research" class="block">
     <p class="eyebrow">Current Project</p>
-    <h2>FastHydrology.jl &mdash; a Julia framework for subglacial hydrology</h2>
-    <p>FastHydrology.jl provides shared grid, state, and simulation infrastructure that different subglacial hydrology models plug into, computing the effective pressure at the base of an ice sheet &mdash; the quantity that couples subglacial water to basal sliding. It can run standalone or be coupled into a larger ice-sheet model such as Yelmo.</p>
-    <p>It currently implements two models: the fast, simplified model of <a href="https://doi.org/10.5194/tc-19-4409-2025" target="_blank" rel="noopener">Kazmierczak et al. (2024)</a>, which routes distributed subglacial water flux over the geometric potential and parameterizes effective pressure for both hard and soft beds with an automatic switch between channelized and distributed drainage; and <a href="https://github.com/TakisAngelides/Shakti.jl" target="_blank" rel="noopener">Shakti.jl</a>, my Julia xPU finite-difference solver for the SHAKTI subglacial hydrology model. Shakti.jl is a standalone package in its own right, and is also wrapped inside FastHydrology.jl so it can share the same grid/state/simulation infrastructure and drop straight into an ice-sheet coupling.</p>
+    <h2>FastHydrology.jl &mdash; a Julia framework for glacial hydrology</h2>
+    <p>FastHydrology.jl provides shared grid, state, and simulation infrastructure that different glacial hydrology models plug into, computing the effective pressure at the base of an ice sheet &mdash; the quantity that couples subglacial water to basal sliding. It can run standalone or be coupled into a larger ice-sheet model such as Yelmo.</p>
+    <p>It currently implements two models: the fast, simplified model of <a href="https://doi.org/10.5194/tc-19-4409-2025" target="_blank" rel="noopener">Kazmierczak et al. (2024)</a>, which routes distributed subglacial water flux over the geometric potential and parameterizes effective pressure for both hard and soft beds with an automatic switch between channelized and distributed drainage; and <a href="https://github.com/TakisAngelides/Shakti.jl" target="_blank" rel="noopener">Shakti.jl</a>, my Julia xPU finite-difference solver for the SHAKTI glacial hydrology model. Shakti.jl is a standalone package in its own right, and is also wrapped inside FastHydrology.jl so it can share the same grid/state/simulation infrastructure and drop straight into an ice-sheet coupling.</p>
 
     <div class="project-card">
       <div class="project-card-head">
         <h3><a href="https://github.com/TakisAngelides/FastHydrology.jl" target="_blank" rel="noopener">TakisAngelides / FastHydrology.jl</a></h3>
       </div>
-      <p>A general Julia framework for simulating subglacial hydrology, designed to plug into ice-sheet models.</p>
+      <p>A general Julia framework for simulating glacial hydrology, designed to plug into ice-sheet models.</p>
       <div class="tag-row">
         <span class="tag">Julia</span>
-        <span class="tag">Subglacial hydrology</span>
+        <span class="tag">Glacial hydrology</span>
         <span class="tag">Ice-sheet coupling</span>
         <span class="tag">Open source</span>
         <span class="tag">Active development</span>
@@ -75,7 +75,7 @@
       <div class="project-card-head">
         <h3><a href="https://github.com/TakisAngelides/Shakti.jl" target="_blank" rel="noopener">TakisAngelides / Shakti.jl</a></h3>
       </div>
-      <p>A Julia xPU finite-difference solver for the SHAKTI subglacial hydrology model &mdash; usable standalone, and wrapped inside FastHydrology.jl.</p>
+      <p>A Julia xPU finite-difference solver for the SHAKTI glacial hydrology model &mdash; usable standalone, and wrapped inside FastHydrology.jl.</p>
       <div class="tag-row">
         <span class="tag">Julia</span>
         <span class="tag">xPU / finite difference</span>
@@ -133,7 +133,7 @@
         <span class="record-title">Postdoctoral Researcher</span>
         <span class="record-org">Alfred Wegener Institute (AWI)</span>
         <ul>
-          <li>Developing a Julia-based subglacial hydrology model extending an ice-sheet flow model</li>
+          <li>Developing a Julia-based glacial hydrology model extending an ice-sheet flow model</li>
         </ul>
       </li>
       <li>
